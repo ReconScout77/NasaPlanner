@@ -1,0 +1,11 @@
+﻿@model IEnumerable<NasaPlanner.Models.Mission>
+
+<h1>Mission</h1>
+
+@foreach(var mission in Model)
+{
+  <li>@Html.DisplayFor(model => mission.MissionName)
+    <input type="button" class="btn btn-info" value="View Details" onclick="location.href='@Url.Action("Details", new { id = mission.MissionId })'"/> 
+  </li>
+}
+
