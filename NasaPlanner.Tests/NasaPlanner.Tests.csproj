@@ -15,4 +15,10 @@
   <ItemGroup>
     <ProjectReference Include="..\NasaPlanner\NasaPlanner.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ModelTests\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="ModelTests\CrewTest.cs" />
+  </ItemGroup>
 </Project>
